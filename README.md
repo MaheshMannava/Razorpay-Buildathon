@@ -5,6 +5,7 @@ RASOI is a capacity-aware ordering system for food commerce. It converts a natur
 Payment begins after the customer accepts a feasible offer. RASOI creates the Razorpay order on the server, uses Razorpay-hosted Checkout, verifies the callback signature and provider state, and starts fulfillment only after confirming a captured payment. If the assigned station fails after capture, the order is cancelled and a full refund obligation is recorded and reconciled.
 
 Built for the Razorpay Buildathon.
+<img width="1494" height="768" alt="Screenshot 2026-09-05 at 10 31 50 PM" src="https://github.com/user-attachments/assets/5bf6b236-3d0f-4b64-ae6b-9fe2721e5e7c" />
 
 ## System flow
 
