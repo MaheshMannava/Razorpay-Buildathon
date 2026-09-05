@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RASOI — Winning Demo Runbook</title>
+  <style>
+    :root { color-scheme: light; --ink:#20251f; --paper:#f6f0e5; --card:#fffdf8; --rust:#a7472d; --green:#245e43; --line:#d9cfbf; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.55 ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(1050px,calc(100% - 32px)); margin:40px auto 80px; }
+    header { padding:44px; border:1px solid var(--line); border-radius:24px; background:var(--card); }
+    .eyebrow { margin:0 0 10px; color:var(--rust); font-size:.78rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+    h1 { max-width:780px; margin:0; font:700 clamp(2.4rem,6vw,5.6rem)/.94 Georgia,serif; letter-spacing:-.045em; }
+    h2 { margin:0 0 14px; font:700 2rem/1.1 Georgia,serif; }
+    h3 { margin:0 0 8px; font-size:1.05rem; }
+    p { margin:0 0 14px; }
+    .lede { max-width:760px; margin-top:24px; font-size:1.16rem; }
+    .hook { margin-top:26px; padding:20px 22px; border-left:5px solid var(--rust); background:#f2dfd1; font:700 1.3rem/1.4 Georgia,serif; }
+    section { margin-top:24px; padding:30px; border:1px solid var(--line); border-radius:20px; background:var(--card); }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .card { padding:20px; border:1px solid var(--line); border-radius:14px; background:#fff; }
+    .time { display:inline-block; margin-bottom:9px; padding:4px 9px; border-radius:999px; color:white; background:var(--green); font-size:.76rem; font-weight:800; }
+    ol,ul { margin:10px 0 0; padding-left:22px; }
+    li+li { margin-top:7px; }
+    blockquote { margin:14px 0 0; padding:15px 18px; border-left:4px solid var(--green); background:#edf3ec; font-family:Georgia,serif; }
+    code { padding:2px 5px; border-radius:5px; background:#eee6d9; }
+    table { width:100%; border-collapse:collapse; }
+    th,td { padding:12px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+    th { color:var(--rust); font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; }
+    .no { color:#8b281f; font-weight:800; }
+    .yes { color:var(--green); font-weight:800; }
+    .footer { margin-top:20px; color:#6d675d; text-align:center; font-size:.9rem; }
+    @media (max-width:720px) { header,section{padding:22px}.grid{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">RASOI · Judge-facing runbook</p>
+    <h1>Sell the promise, then prove the payment.</h1>
+    <p class="lede">The winning story is not “we integrated Razorpay.” It is: RASOI prevents a kitchen from accepting money for a promise it cannot keep—and when reality changes, it reverses the payment safely.</p>
+    <p class="hook">“Every ordering app asks what the customer wants. RASOI also asks what the kitchen can actually promise.”</p>
+  </header>
+
+  <section>
+    <p class="eyebrow">Before pressing record</p>
+    <h2>Make failure impossible to see</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Product setup</h3>
+        <ol>
+          <li>Restart the production-like local server.</li>
+          <li>Start the webhook proxy and refresh the Cloudflare tunnel URL in Razorpay Test Mode.</li>
+          <li>Verify the Razorpay Test account has enough balance for a full refund after fees.</li>
+          <li>Run typecheck, lint, tests, build, and Playwright.</li>
+          <li>Rehearse once with the exact meal request.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Recording setup</h3>
+        <ol>
+          <li>Record at 1080p, 100% browser zoom, with a clean browser profile.</li>
+          <li>Hide bookmarks, notifications, credentials, and personal dashboard data.</li>
+          <li>Open RASOI plus Razorpay Test Mode Orders and Payments tabs in advance.</li>
+          <li>Open the public demo before the final take, then start a fresh run.</li>
+          <li>Record voice separately if room noise makes live narration weaker.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Final cut · 2 minutes 50 seconds</p>
+    <h2>The exact winning sequence</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="time">0:00–0:15</span>
+        <h3>Cold open on the problem</h3>
+        <p>Show the landing hero. Do not introduce yourself yet.</p>
+        <blockquote>“Food apps take payment first and discover operational failure later. RASOI checks whether the kitchen can keep the promise before it charges the customer.”</blockquote>
+      </div>
+      <div class="card">
+        <span class="time">0:15–0:28</span>
+        <h3>Define the product in one breath</h3>
+        <p>Point to the three-part product explanation.</p>
+        <blockquote>“It reads a meal request, verifies recipe, stock, station health, and capacity, then unlocks Razorpay only for a feasible offer.”</blockquote>
+      </div>
+      <div class="card">
+        <span class="time">0:28–0:52</span>
+        <h3>Show intelligence becoming constraints</h3>
+        <p>Use: <code>Maximum ₹150, within five minutes, no onion; rice is okay.</code></p>
+        <ol>
+          <li>Click <strong>Extract constraints</strong>.</li>
+          <li>Point to budget, deadline, onion exclusion, and substitution permission.</li>
+          <li>Click <strong>Confirm constraints</strong>.</li>
+        </ol>
+        <blockquote>“Natural language is editable input—not permission for the model to invent menu facts or prices.”</blockquote>
+      </div>
+      <div class="card">
+        <span class="time">0:52–1:12</span>
+        <h3>Make the operational decision visible</h3>
+        <p>Show Lemon Rice, ₹100, ready time, and bowl station. Accept promptly.</p>
+        <blockquote>“The server found the lowest-priced feasible meal. Acceptance rechecks the offer and atomically reserves ingredients and a real capacity slot.”</blockquote>
+      </div>
+      <div class="card">
+        <span class="time">1:12–1:31</span>
+        <h3>Prove the provider Order</h3>
+        <p>Show RASOI’s masked <code>order_…</code> suffix, then the same newest Order in the Razorpay Test Dashboard.</p>
+        <blockquote>“Only after reservation does RASOI call Razorpay’s Orders API. The amount comes from the server-owned quote, never the browser.”</blockquote>
+      </div>
+      <div class="card">
+        <span class="time">1:31–1:58</span>
+        <h3>Complete hosted Checkout</h3>
+        <p>Open Razorpay Checkout and use the rehearsed Test Netbanking path. Cut any loading delay. Return to RASOI’s captured state, then match the <code>pay_…</code> suffix in Razorpay.</p>
+        <blockquote>“RASOI verifies Razorpay’s signature, fetches the Payment, and checks Order, amount, currency, and captured state before fulfillment.”</blockquote>
+      </div>
+      <div class="card">
+        <span class="time">1:58–2:28</span>
+        <h3>Create the memorable moment</h3>
+        <p>Say “Now reality changes,” then click <strong>Disable bowl station</strong>. Show the kitchen turn unavailable and the meal become cancelled.</p>
+        <blockquote>“A normal checkout demo ends at success. RASOI keeps reasoning after payment. The station failure creates exactly one full-refund obligation.”</blockquote>
+      </div>
+      <div class="card">
+        <span class="time">2:28–2:43</span>
+        <h3>Prove recovery, not theatre</h3>
+        <p>Show <code>processed</code>, the masked <code>rfnd_…</code> suffix, and the matching full refund in Razorpay Test Mode.</p>
+        <blockquote>“The refund uses a stable idempotency key and reconciles against provider state, so retries cannot manufacture duplicate refund intent.”</blockquote>
+      </div>
+      <div class="card">
+        <span class="time">2:43–2:50</span>
+        <h3>Land the thesis</h3>
+        <p>End on the append-only timeline, not your code editor.</p>
+        <blockquote>“RASOI puts payment behind operational truth: prove the promise, take payment, and reverse it safely when the promise becomes impossible.”</blockquote>
+      </div>
+      <div class="card">
+        <span class="time">Optional end card</span>
+        <h3>One clean call to action</h3>
+        <p>Show the product name, live demo URL, repository URL, and “Razorpay Test Mode · no real money.” Keep it on screen for three seconds.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Editing that adds energy</p>
+    <h2>Make it creative without making it fake</h2>
+    <ul>
+      <li>Use a tiny corner chapter label: <strong>Request → Feasibility → Payment → Failure → Recovery</strong>.</li>
+      <li>Add a restrained “payment gate unlocked” sound when the feasible offer is accepted.</li>
+      <li>Use a one-second red tint or subtle impact sound when the bowl station fails.</li>
+      <li>Freeze for one second around each matching provider-ID suffix so judges can verify it.</li>
+      <li>Use jump cuts for Razorpay loading; never fake the result or cut away before showing the matching Dashboard entity.</li>
+      <li>Keep music low and percussion-free under narration. Silence it during the station failure for contrast.</li>
+      <li>Put captions on every spoken line; many judges watch without sound.</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="eyebrow">What judges should remember</p>
+    <h2>Three proof points—nothing more</h2>
+    <table>
+      <tr><th>Judge question</th><th>Visual answer</th></tr>
+      <tr><td>Does it work?</td><td>One uninterrupted request-to-refund flow with actual Razorpay Test Mode entities.</td></tr>
+      <tr><td>What is new?</td><td>Payment is gated by live operational feasibility, not merely customer intent.</td></tr>
+      <tr><td>Is it technically credible?</td><td>Matching provider IDs, server verification, atomic reservation, idempotent refund, append-only timeline.</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <p class="eyebrow">Vercel readiness</p>
+    <h2>Current answer: do not deploy this repository to Vercel yet</h2>
+    <p><span class="yes">The React/Vite frontend can run on Vercel.</span> Vercel also supports Fastify as a Function when its entrypoint is placed at a detected location.</p>
+    <p><span class="no">The complete RASOI flow is not Vercel-safe in its current form.</span> It writes the authoritative ledger to local SQLite, starts background timers for payment/refund reconciliation, and keeps process-local lifecycle state. Vercel Functions have ephemeral instances and no durable shared local filesystem.</p>
+    <h3>Required before a full Vercel deployment</h3>
+    <ol>
+      <li>Migrate the seven-table SQLite ledger to durable Postgres, such as Neon or Supabase.</li>
+      <li>Rewrite the database layer and preserve the existing transactional reservation/idempotency guarantees.</li>
+      <li>Move the Fastify entrypoint to a Vercel-detected path such as <code>src/server.ts</code>.</li>
+      <li>Replace always-running reconciliation timers with webhook-first processing plus a secure cron/queue and request-triggered reconciliation.</li>
+      <li>Add Vercel routing/build configuration for the Vite assets and Fastify Function.</li>
+      <li>Set production environment variables, including the production origin and Razorpay Test secrets.</li>
+      <li>Change the Razorpay Test webhook to the stable HTTPS deployment URL.</li>
+      <li>Repeat the complete live Order → Payment → station failure → Refund test on the deployed URL.</li>
+    </ol>
+    <p><strong>Fastest safe submission option:</strong> deploy the current full application to a long-lived Node host with a persistent volume. Use Vercel only after the database/lifecycle migration, or use Vercel for the frontend with the API on that long-lived host.</p>
+  </section>
+
+  <p class="footer">RASOI winning-demo runbook · actual Razorpay Test Mode entities · no real money movement</p>
+</main>
+</body>
+</html>

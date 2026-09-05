@@ -1,0 +1,11 @@
+{
+  "reportVersion": "gate-b-comparison-v1",
+  "fixtureVersion": "gate-b-v1",
+  "decision": "scripted_rules",
+  "reason": "Neither evaluated low-cost model improved complete hard-field accuracy without weakening safety metrics.",
+  "methods": {
+    "rules-v1": {"completeHardFields": 27, "sampleSize": 30, "falseClarifications": 0, "missedClarifications": 0, "unsupportedFacts": 0, "meanLatencyMs": 0.04},
+    "gpt-5-nano": {"completeHardFields": 26, "sampleSize": 30, "falseClarifications": 0, "missedClarifications": 2, "unsupportedFacts": 2, "meanLatencyMs": 10322.4},
+    "gpt-4o-mini": {"completeHardFields": 13, "sampleSize": 30, "falseClarifications": 2, "missedClarifications": 4, "unsupportedFacts": 7, "meanLatencyMs": 1568.09}
+  }
+}

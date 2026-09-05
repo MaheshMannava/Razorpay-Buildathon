@@ -1,0 +1,809 @@
+{
+  "fixtureVersion": "gate-b-v1",
+  "model": "gpt-4o-mini",
+  "rows": [
+    {
+      "id": 1,
+      "expected": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 300,
+        "exclusions": [
+          "onion"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 300,
+        "exclusions": [
+          "onion"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1752.228334
+    },
+    {
+      "id": 2,
+      "expected": {
+        "budgetPaise": 12000,
+        "deadlineSeconds": 300,
+        "exclusions": [],
+        "preferredDishIds": [
+          "plain_dosa"
+        ],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 120,
+        "deadlineSeconds": 300,
+        "exclusions": [],
+        "preferredDishIds": [
+          "plain_dosa"
+        ],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1390.249708
+    },
+    {
+      "id": 3,
+      "expected": {
+        "budgetPaise": 10000,
+        "deadlineSeconds": 240,
+        "exclusions": [],
+        "preferredDishIds": [
+          "lemon_rice"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 100,
+        "deadlineSeconds": 240,
+        "exclusions": [],
+        "preferredDishIds": [
+          "lemon_rice"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1592.7324579999995
+    },
+    {
+      "id": 4,
+      "expected": {
+        "budgetPaise": 11000,
+        "deadlineSeconds": 360,
+        "exclusions": [],
+        "preferredDishIds": [
+          "curd_rice"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 110,
+        "deadlineSeconds": 360,
+        "exclusions": [
+          "dairy"
+        ],
+        "preferredDishIds": [
+          "curd_rice"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": true
+      },
+      "latencyMs": 1986.5377500000004
+    },
+    {
+      "id": 5,
+      "expected": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 600,
+        "exclusions": [],
+        "preferredDishIds": [
+          "masala_dosa"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 150,
+        "deadlineSeconds": 600,
+        "exclusions": [
+          "onion"
+        ],
+        "preferredDishIds": [
+          "masala_dosa"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 4919.45225
+    },
+    {
+      "id": 6,
+      "expected": {
+        "budgetPaise": 16000,
+        "deadlineSeconds": 480,
+        "exclusions": [
+          "dairy"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 16000,
+        "deadlineSeconds": 480,
+        "exclusions": [
+          "dairy"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1722.0504999999994
+    },
+    {
+      "id": 7,
+      "expected": {
+        "budgetPaise": 12000,
+        "deadlineSeconds": 360,
+        "exclusions": [
+          "peanuts"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 120,
+        "deadlineSeconds": 360,
+        "exclusions": [
+          "peanuts"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1257.8154169999998
+    },
+    {
+      "id": 8,
+      "expected": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 420,
+        "exclusions": [
+          "onion",
+          "dairy"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 420,
+        "exclusions": [
+          "onion",
+          "dairy"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1416.7037920000002
+    },
+    {
+      "id": 9,
+      "expected": {
+        "budgetPaise": 10000,
+        "deadlineSeconds": 180,
+        "exclusions": [],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 100,
+        "deadlineSeconds": 180,
+        "exclusions": [],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1172.3430409999983
+    },
+    {
+      "id": 10,
+      "expected": {
+        "budgetPaise": 13000,
+        "deadlineSeconds": 600,
+        "exclusions": [],
+        "preferredDishIds": [
+          "plain_dosa"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 130,
+        "deadlineSeconds": 600,
+        "exclusions": [],
+        "preferredDishIds": [
+          "plain_dosa"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1181.1853329999976
+    },
+    {
+      "id": 11,
+      "expected": {
+        "budgetPaise": 11000,
+        "deadlineSeconds": 300,
+        "exclusions": [],
+        "preferredDishIds": [
+          "curd_rice"
+        ],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 11000,
+        "deadlineSeconds": 300,
+        "exclusions": [],
+        "preferredDishIds": [
+          "curd_rice"
+        ],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 2061.5489579999994
+    },
+    {
+      "id": 12,
+      "expected": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 360,
+        "exclusions": [
+          "onion"
+        ],
+        "preferredDishIds": [
+          "lemon_rice"
+        ],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 360,
+        "exclusions": [
+          "onion"
+        ],
+        "preferredDishIds": [
+          "lemon_rice"
+        ],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1619.0062920000018
+    },
+    {
+      "id": 13,
+      "expected": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 240,
+        "exclusions": [],
+        "preferredDishIds": [
+          "masala_dosa"
+        ],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 150,
+        "deadlineSeconds": 240,
+        "exclusions": [
+          "onion"
+        ],
+        "preferredDishIds": [
+          "masala_dosa",
+          "lemon_rice",
+          "curd_rice"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1433.6160830000008
+    },
+    {
+      "id": 14,
+      "expected": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 480,
+        "exclusions": [
+          "peanuts"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 480,
+        "exclusions": [
+          "peanuts"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 3072.6997499999998
+    },
+    {
+      "id": 15,
+      "expected": {
+        "budgetPaise": 9900,
+        "deadlineSeconds": 300,
+        "exclusions": [],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 9900,
+        "deadlineSeconds": 300,
+        "exclusions": [],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1070.0433329999978
+    },
+    {
+      "id": 16,
+      "expected": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 30,
+        "exclusions": [],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 30,
+        "exclusions": [],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1282.8323750000018
+    },
+    {
+      "id": 17,
+      "expected": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 480,
+        "exclusions": [
+          "dairy",
+          "peanuts"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 480,
+        "exclusions": [
+          "dairy",
+          "peanuts"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1228.2725000000028
+    },
+    {
+      "id": 18,
+      "expected": {
+        "budgetPaise": 12000,
+        "deadlineSeconds": 420,
+        "exclusions": [
+          "onion"
+        ],
+        "preferredDishIds": [
+          "plain_dosa"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 12000,
+        "deadlineSeconds": 420,
+        "exclusions": [
+          "onion"
+        ],
+        "preferredDishIds": [
+          "plain_dosa"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1153.1857920000002
+    },
+    {
+      "id": 19,
+      "expected": {
+        "budgetPaise": 11000,
+        "deadlineSeconds": 300,
+        "exclusions": [],
+        "preferredDishIds": [
+          "curd_rice"
+        ],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 110,
+        "deadlineSeconds": 300,
+        "exclusions": [
+          "dairy"
+        ],
+        "preferredDishIds": [
+          "curd_rice"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [
+          "missing_deadline"
+        ],
+        "safetyLimitationRequired": true
+      },
+      "latencyMs": 1199.1620409999996
+    },
+    {
+      "id": 20,
+      "expected": {
+        "budgetPaise": 16000,
+        "deadlineSeconds": 120,
+        "exclusions": [
+          "onion"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 16000,
+        "deadlineSeconds": 120,
+        "exclusions": [
+          "onion"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1024.7137500000026
+    },
+    {
+      "id": 21,
+      "expected": {
+        "budgetPaise": 12000,
+        "deadlineSeconds": 360,
+        "exclusions": [],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 120,
+        "deadlineSeconds": 360,
+        "exclusions": [],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [
+          "ambiguous_budget"
+        ],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1227.9206669999985
+    },
+    {
+      "id": 22,
+      "expected": {
+        "budgetPaise": 12000,
+        "deadlineSeconds": 300,
+        "exclusions": [],
+        "preferredDishIds": [
+          "plain_dosa"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 120,
+        "deadlineSeconds": 300,
+        "exclusions": [
+          "onion"
+        ],
+        "preferredDishIds": [
+          "plain_dosa"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1328.0336659999957
+    },
+    {
+      "id": 23,
+      "expected": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 300,
+        "exclusions": [
+          "dairy"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 300,
+        "exclusions": [
+          "dairy"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": true
+      },
+      "latencyMs": 1351.9249169999966
+    },
+    {
+      "id": 24,
+      "expected": {
+        "budgetPaise": 12000,
+        "deadlineSeconds": 600,
+        "exclusions": [],
+        "preferredDishIds": [
+          "plain_dosa"
+        ],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 12000,
+        "deadlineSeconds": 600,
+        "exclusions": [],
+        "preferredDishIds": [
+          "plain_dosa"
+        ],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1205.0584170000002
+    },
+    {
+      "id": 25,
+      "expected": {
+        "budgetPaise": null,
+        "deadlineSeconds": 300,
+        "exclusions": [],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [
+          "missing_budget"
+        ],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": null,
+        "deadlineSeconds": 300,
+        "exclusions": [],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1079.3962919999976
+    },
+    {
+      "id": 26,
+      "expected": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": null,
+        "exclusions": [],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [
+          "missing_deadline"
+        ],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 150,
+        "deadlineSeconds": null,
+        "exclusions": [],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1274.3386669999963
+    },
+    {
+      "id": 27,
+      "expected": {
+        "budgetPaise": null,
+        "deadlineSeconds": 300,
+        "exclusions": [],
+        "preferredDishIds": [
+          "plain_dosa"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [
+          "missing_budget"
+        ],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": null,
+        "deadlineSeconds": 300,
+        "exclusions": [],
+        "preferredDishIds": [
+          "plain_dosa"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1493.0582090000025
+    },
+    {
+      "id": 28,
+      "expected": {
+        "budgetPaise": null,
+        "deadlineSeconds": 300,
+        "exclusions": [],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [
+          "ambiguous_budget"
+        ],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": null,
+        "deadlineSeconds": 300,
+        "exclusions": [],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [
+          "missing_budget",
+          "missing_deadline"
+        ],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1167.5172079999975
+    },
+    {
+      "id": 29,
+      "expected": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 300,
+        "exclusions": [
+          "nuts"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": true,
+        "clarificationReasons": [
+          "allergy_safety_limit"
+        ],
+        "safetyLimitationRequired": true
+      },
+      "actual": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 300,
+        "exclusions": [
+          "nuts"
+        ],
+        "preferredDishIds": [],
+        "substitutesAllowed": false,
+        "clarificationReasons": [
+          "missing_budget",
+          "missing_deadline",
+          "allergy_safety_limit"
+        ],
+        "safetyLimitationRequired": true
+      },
+      "latencyMs": 2048.5737910000025
+    },
+    {
+      "id": 30,
+      "expected": {
+        "budgetPaise": 15000,
+        "deadlineSeconds": 300,
+        "exclusions": [
+          "onion"
+        ],
+        "preferredDishIds": [
+          "masala_dosa"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [
+          "conflicting_constraints"
+        ],
+        "safetyLimitationRequired": false
+      },
+      "actual": {
+        "budgetPaise": 150,
+        "deadlineSeconds": 300,
+        "exclusions": [
+          "onion"
+        ],
+        "preferredDishIds": [
+          "masala_dosa"
+        ],
+        "substitutesAllowed": false,
+        "clarificationReasons": [],
+        "safetyLimitationRequired": false
+      },
+      "latencyMs": 1330.497832999994
+    }
+  ]
+}
